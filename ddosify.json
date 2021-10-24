@@ -1,0 +1,31 @@
+{
+  "request_count": 10000,
+  "load_type": "waved",
+  "duration": 60,
+  "output": "stdout",
+  "steps": [{
+    "id": 1,
+    "url": "http://dot.127.0.0.1.nip.io",
+    "protocol": "http",
+    "method": "GET",
+    "timeout": 1
+  }, {
+    "id": 2,
+    "url": "http://dot.127.0.0.1.nip.io/posts/youtube/",
+    "protocol": "http",
+    "method": "GET",
+    "timeout": 1
+  }, {
+    "id": 3,
+    "url": "http://dot.127.0.0.1.nip.io",
+    "protocol": "http",
+    "method": "GET",
+    "timeout": 1
+  }, {
+    "id": 4,
+    "url": "http://dot.127.0.0.1.nip.io/posts/catalog/",
+    "protocol": "http",
+    "method": "GET",
+    "timeout": 1
+  }]
+}
