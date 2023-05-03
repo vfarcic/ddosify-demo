@@ -1,0 +1,37 @@
+{
+    "iteration_count": 1000,
+    "duration": 15,
+    "debug" : false,
+    "load_type": "waved",
+    "engine_mode": "distinct-user",
+    "output": "stdout",
+    "env": {
+        "randomIntPerIteration": "{{_randomInt}}"
+    },
+    "steps": [
+        {
+            "id": 1,
+            "url": "{{$URL}}",
+            "method": "GET",
+            "assertion":[
+                "equals(status_code,200)"
+            ]
+        },
+        {
+            "id": 2,
+            "url": "http://silly-demo.212.2.247.78.nip.io/video?id={{randomIntPerIteration}}&title=Video%20by%20{{_randomFirstName}}%20{{_randomLastName}}",
+            "method": "POST",
+            "assertion":[
+                "equals(status_code,200)"
+            ]
+        },
+        {
+            "id": 3,
+            "url": "{{$URL}}/videos",
+            "method": "GET",
+            "assertion":[
+                "equals(status_code,200)"
+            ]
+        }
+    ]
+}
