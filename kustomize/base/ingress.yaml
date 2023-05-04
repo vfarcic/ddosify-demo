@@ -18,5 +18,5 @@ spec:
                 name: silly-demo
                 port:
                   number: 8080
-      host: silly-demo.212.2.247.78.nip.io
+      host: silly-demo.212.2.242.24.nip.io
   ingressClassName: traefik
