@@ -8,6 +8,17 @@
     "env": {
         "randomIntPerIteration": "{{_randomInt}}"
     },
+    "success_criterias": [
+        {
+            "rule": "fail_count_perc < 25",
+            "abort": false,
+            "delay": 1
+        },
+        {
+            "rule": "p90(iteration_duration) < 5000",
+            "abort": false
+        }
+    ],
     "steps": [
         {
             "id": 1,
