@@ -10,7 +10,7 @@
     },
     "success_criterias": [
         {
-            "rule": "fail_count_perc < 25",
+            "rule": "fail_count_perc < 0.25",
             "abort": false,
             "delay": 1
         },
